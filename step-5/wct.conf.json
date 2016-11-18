@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "istanbul": {
+      "dir": "./test/coverage",
+      "reporters": ["text-summary", "lcov"],
+      "include": [
+        "temp/js/**/*.js"
+      ],
+      "thresholds": {
+        "global": {
+          "statements": 76
+        }
+      }
+    }
+  }
+}

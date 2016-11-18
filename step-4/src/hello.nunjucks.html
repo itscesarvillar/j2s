@@ -1,0 +1,17 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="content">
+  <span id="hello">Loading..</span>
+</div>
+
+{% endblock %}
+
+{% block endBody %}
+<script>
+  app.network.get('{{endpoint}}/hello', function(response) {
+    document.querySelector('#hello').textContent = response;
+  });
+</script>
+{% endblock %}

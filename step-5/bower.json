@@ -1,0 +1,13 @@
+{
+  "name": "j2s",
+  "description": "A project that teaches you how to use building tools",
+  "main": "index.html",
+  "authors": [
+    "jorge del casar",
+    "cesar villar"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^5.0.0"
+  }
+}

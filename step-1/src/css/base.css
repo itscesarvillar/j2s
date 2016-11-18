@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  position: relative;
+  font-family: Roboto;
+  overflow-x: hidden;
+  transition: transform 150ms ease;
+}
+
+.clearfix {
+  overflow: auto;
+}

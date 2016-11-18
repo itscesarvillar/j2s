@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  position: relative;
+  padding: 24px 24px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-width {
+  display: block;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.content.full-width {
+  max-width: none;
+  display: flex;
+}
+
+
+/* media */
+@media(min-width: 720px) {
+  .content {
+    margin: 0 auto;
+    padding-top: 137px;
+    max-width: 900px;
+  }
+}

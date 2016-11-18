@@ -1,0 +1,34 @@
+{
+  "name": "j2s",
+  "version": "1.0.0",
+  "description": "A project that teaches you how to use building tools",
+  "scripts": {
+    "start": "./node_modules/gulp/bin/gulp.js watchAndReload & ./node_modules/browser-sync/bin/browser-sync.js start --server 'temp' --files 'temp'",
+    "test": "./node_modules/web-component-tester/bin/wct"
+  },
+  "author": "jorge del casar, cesar villar",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "del": "^2.2.2",
+    "eslint": "^3.10.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-data": "^1.2.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-size": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "stubby": "^4.0.0",
+    "through2": "^2.0.1",
+    "web-component-tester": "4.3.1",
+    "web-component-tester-istanbul": "^0.10.0"
+  }
+}

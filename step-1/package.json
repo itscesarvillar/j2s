@@ -1,0 +1,13 @@
+{
+  "name": "j2s",
+  "version": "1.0.0",
+  "description": "A project that teaches you how to use building tools",
+  "scripts": {
+    "start": "./node_modules/browser-sync/bin/browser-sync.js start --server 'src' --files 'src'"
+  },
+  "author": "jorge del casar, cesar villar",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.1"
+  }
+}

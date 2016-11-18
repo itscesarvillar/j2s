@@ -1,0 +1,18 @@
+<!-- header.nunjucks -->
+<header class="header mobile clearfix">From junior to senior<img class="header__menu--button" src="images/menu.svg">
+  <nav class="sidebar">
+    <div class="sidebar__header">Menu</div>
+    <ul class="sidebar__list">
+      <li class="sidebar__item"><a href="#" class="badge">a</a></li>
+      <li class="sidebar__item"><a href="#">b</a></li>
+    </ul>
+    <div class="sidebar__footer">J2S</div>
+  </nav>
+</header>
+<header class="header desktop">
+  <span class="header__logo"><img src="images/logo.svg">J2S</span>
+  <ul class="header__list">
+    <li><a href="#" class="header__list__item">a</a></li>
+    <li><a href="#" class="header__list__item">b</a></li>
+  </ul>
+</header>
