@@ -4,7 +4,7 @@
   "description": "A project that teaches you how to use building tools",
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js watchAndReload & ./node_modules/browser-sync/bin/browser-sync.js start --server 'temp' --files 'temp'",
-    "test": "./node_modules/web-component-tester/bin/wct"
+    "test": "./node_modules/gulp/bin/gulp.js test && echo 'built' && ./node_modules/web-component-tester/bin/wct"
   },
   "author": "jorge del casar, cesar villar",
   "license": "ISC",

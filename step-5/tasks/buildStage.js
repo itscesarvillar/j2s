@@ -16,13 +16,13 @@ gulp.task('copy2stage', function() {
     .pipe(size({ title: 'stage' }));
 });
 
-gulp.task('buildStage', function() {
+gulp.task('buildStage', function(callback) {
   return runSequence(
     'clean:buildStage',
-    ['build:environment', 'build:nunjucks','build:sass','copy2stage']);
+    ['build:environment', 'build:nunjucks','build:sass','copy2stage'],
+    callback);
 });
 
-gulp.task('clean:buildStage', function(cb) {
-  del.sync([`${workspace.stage}`]);
-  cb();
+gulp.task('clean:buildStage', function() {
+  return del.sync([`${workspace.stage}`]);
 });

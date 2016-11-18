@@ -1,0 +1,6 @@
+**/node_modules/
+**/bower_components/
+**/test/coverage
+**/test/test-*.html
+**/temp/
+npm-debug.log

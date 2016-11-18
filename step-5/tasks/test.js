@@ -3,6 +3,7 @@ var through = require('through2');
 var workspace = require('../workspace.js');
 var fs = require('fs');
 var path = require('path');
+var runSequence = require('run-sequence');
 
 
 gulp.task('build:test', function() {
@@ -31,3 +32,7 @@ function copyHTML() {
   });
   return stream;
 }
+
+gulp.task('test', function(callback) {
+  return runSequence('buildStage', 'build:test', callback);
+});
